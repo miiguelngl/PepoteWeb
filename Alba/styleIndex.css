@@ -28,7 +28,7 @@ header{
 .header div p{
     display: inline;
     margin-right: 12px;
-    font-size: small;
+    font-size: medium;
 }
 #header-menu{
     display: flex;
