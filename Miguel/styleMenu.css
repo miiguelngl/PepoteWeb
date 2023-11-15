@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: 'Franchise';
+    src: url(typography/Franchise.ttf);
+}
+:root{
+    --montserrat: 'Montserrat', sans-serif;
+    --franchise: 'Franchise', sans-serif;
+    --principal: #f29f05;
+    --secundario: #000000;
+    --letra: #ffffff;
+    --tercer: #40200e; 
+}
+body{
+    margin: 0px;
+    font-family: var(--montserrat);
+}
+header{
+    background-color: var(--principal);
+    color: var(--letra);
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 12px;
+}
+#header-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#header-icons{
+    float: right;
+}
+/* -- FOOTER -- */
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+#slogan{
+    background-color: var(--secundario);
+    color: var(--letra);
+    font-family: var(--franchise);
+    
+}
+#slogan h3{
+    text-align: center;
+    font-size: 32px;
+    margin: 4px;
+    font-weight: 200;
+}
+#footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: var(--principal);
+}
+#footer-content h3{
+    font-family: var(--franchise);
+    font-size: 24px;
+    font-weight: 200;
+}
+
+#copyright{
+    text-align: center;
+    background-color: var(--tercer);
+    color: var(--letra);
+    font-size: 12px;
+}
