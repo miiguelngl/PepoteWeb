@@ -2,8 +2,10 @@
     font-family: 'Franchise';
     src: url(../typography/Franchise.ttf);
 }
-
-#movil{
+body{
+    background-color: black;
+}
+#menu-header-movil{
     width: 45%;
     background-color: #f29f05;
     display: flex;
@@ -48,6 +50,21 @@ input.oculto_reserva[type=checkbox] {
 }
 
 input.oculto_contacto[type=checkbox] {
+    position: absolute;
+    left: -999em;
+}
+
+:checked~#menu-header-movil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #aa771d;
+    align-items: center;
+}
+#menu-header-movil {
+    display: none;
+}
+input.oculto_menu[type=checkbox] {
     position: absolute;
     left: -999em;
 }
