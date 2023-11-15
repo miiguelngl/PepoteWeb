@@ -1,22 +1,53 @@
-nav {
-    position: fixed;
-    width: 100%;
-  }
-  
-  ul {
-    font-size: 12px;
-    text-align: left;
-  }
-  
-  a {
-    font-size: 14px;
-    color: #000;
-  }
-  ul ul {
+@font-face {
+    font-family: 'Franchise';
+    src: url(../typography/Franchise.ttf);
+}
+
+#movil{
+    width: 45%;
+    background-color: #f29f05;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franchise';
+}
+div.elemento-menu{
+    padding: 10px;
+}
+div.elemento-menu a{
+    text-decoration: none;
+    color: black;
+}
+.reservation_elementos {
     display: none;
-  }
-  
-  a:hover ul ul {
+}
+
+:checked~.reservation_elementos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #aa771d;
+    align-items: center;
+}
+.reservation_elementos a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+input.oculto_reserva[type=checkbox] {
+    position: absolute;
+    left: -999em;
+}
+
+.contact_info {
+    display: none;
+}
+
+:checked~.contact_info {
     display: block;
-  }
-    
+}
+
+input.oculto_contacto[type=checkbox] {
+    position: absolute;
+    left: -999em;
+}
