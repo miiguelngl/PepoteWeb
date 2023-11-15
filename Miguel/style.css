@@ -40,59 +40,6 @@ header ul li{
 #header-icons{
     float: right;
 }
-/* -- SECTION -- */
-.section-menu{
-    display: grid;
-    height: auto;
-    grid-template-columns: 300px;
-    grid-template-rows: auto;
-    justify-content: space-around;
-    gap: 12px;
-    margin: 12px 0px;
-}
-.section-menu-case{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--principal);
-    border-radius: 2px;
-    padding: 16px;
-    margin-bottom: 12px;
-}
-.section-menu-case img{
-    width: 300px;
-    height: 262px;
-}
-.section-menu-case h3{
-    font-family: var(--franchise);
-    font-size: 24px;
-    font-weight: 200;
-    margin-bottom: 0px;
-}
-.section-menu-case p{
-    text-align: center;
-}
-.section-menu-case a{
-    text-decoration: none;
-    color: var(--secundario);
-    text-transform: uppercase;
-}
-#section-button-position{
-    display: flex;
-    justify-content: center;
-    margin: 32px 0px;
-}
-#section-button{
-    background-color: var(--principal);
-    border-radius: 8px;
-    padding: 12px;
-    font-size: 22px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    border: none;
-    margin: auto;
-}
 /* -- FOOTER -- */
 footer{
     display: flex;
@@ -145,18 +92,6 @@ footer{
     /* -- HEADER -- */
     .header{
         padding: 8px 0px;
-    }
-    /* -- SECTION -- */
-    .section-menu{
-        display: grid;
-        height: auto;
-        grid-template-columns: repeat(3, 375px);
-        justify-content: space-around;
-        gap: 12px;
-        margin: 25px;
-    }
-    .section-menu-case h3{
-        font-size: 32px;
     }
     /* -- FOOTER -- */
     #footer-content{
