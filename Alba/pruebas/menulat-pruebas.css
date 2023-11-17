@@ -3,7 +3,7 @@
     src: url(../typography/Franchise.ttf);
 }
 body{
-    background-color: black;
+    background-color: rgb(155, 100, 100);
 }
 #menu-header-movil{
     width: 45%;

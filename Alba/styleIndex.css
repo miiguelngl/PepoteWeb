@@ -12,50 +12,119 @@
     --tercer: #40200e; 
 }
 body{
-    margin: 0px;
-    font-family: var(--montserrat);
+    margin: 0;
 }
-header{
-    background-color: var(--principal);
-    color: var(--letra);
+/*HEADER*/
+.header-desktop{
+    display: none;
 }
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.header div p{
-    display: inline;
-    margin-right: 12px;
-    font-size: medium;
-}
-#header-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-#header-menu img{
-    width: 50px;
-    height: 44.9px;
+#header-movil label{
     margin: 10px;
+}
+#header-movil{
+    height: 10%;
+    background-color: var(--principal);
+}
+#header-movil div#logo{
+    display: inline;
+    margin-left: 45%;
+}
+#header-movil div img{
+    height: 50px;
+    
+}
+#menu-header-movil{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franchise';
+
+}
+div.elemento-menu{
+    padding: 10px;
+}
+div.elemento-menu a{
+    text-decoration: none;
+    color: var(--secundario);
+}
+.reservation_elementos {
+    display: none;
 }
 
-#header-icons{
-    float: right;
+:checked~.reservation_elementos {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #aa771d;
+    align-items: center;
+    left: 0;
 }
-#header-icons img{
-    width: 15.72px;
-    height: 15.72px;
-    margin: 10px;
+.reservation_elementos a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
 }
-/* -- FOOTER -- */
+input.oculto_reserva[type=checkbox] {
+    position: absolute;
+    left: -999em;
+}
+
+.contact_info {
+    display: none;
+}
+
+:checked~.contact_info {
+    display: block;
+}
+
+input.oculto_contacto[type=checkbox] {
+    position: absolute;
+    left: -999em;
+}
+
+:checked~#menu-header-movil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #aa771d;
+    align-items: center;
+}
+#menu-header-movil {
+    display: none;
+}
+input.oculto_menu[type=checkbox] {
+    position: absolute;
+    left: -999em;
+}
+.contact_info div p{
+    font-family: var(--montserrat);
+    font-size: small;
+}
+.contact_info div#tel p, .contact_info div#correo p{
+    display: inline;
+}
+.contact_info div#tel img, .contact_info div#correo img{
+    width: 16px;
+    height: 16px;
+}
+.contact_info div#social img{
+    height: 16px;
+    width: 16px;
+}
+/*FOOTER*/
 footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
-
+footer img{
+    width: 180px;
+    height: 120px;
+}
 #slogan{
     background-color: var(--secundario);
     color: var(--letra);
@@ -64,7 +133,7 @@ footer{
 }
 #slogan h3{
     text-align: center;
-    font-size: 32px;
+    font-size: 25px;
     margin: 4px;
     font-weight: 200;
 }
@@ -86,4 +155,78 @@ footer{
     background-color: var(--tercer);
     color: var(--letra);
     font-size: 12px;
+}
+@media only screen and (min-width: 1024px){
+    body{
+        margin: 0px;
+        font-family: var(--montserrat);
+    }
+    #header-movil{
+        display: none;
+    }
+    body{
+        margin: 0px;
+        font-family: var(--montserrat);
+    }
+    /* -- HEADER -- */
+    .header-desktop {
+        background-color: var(--principal);
+        color: var(--letra);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 10%;
+    }
+    div#header-menu-desktop{
+        display: inline;
+        margin-right: 12px;
+    }
+    #header-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #header-icons{
+        float: right;
+    }
+    
+    /* -- FOOTER --*/
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #slogan{
+        background-color: var(--secundario);
+        color: var(--letra);
+        font-family: var(--franchise);
+        
+    }
+    #slogan h3{
+        text-align: center;
+        font-size: 32px;
+        margin: 4px;
+        font-weight: 200;
+    }
+    #footer-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        background-color: var(--principal);
+    }
+    #footer-content h3{
+        font-family: var(--franchise);
+        font-size: 24px;
+        font-weight: 200;
+    }
+    
+    #copyright{
+        text-align: center;
+        background-color: var(--tercer);
+        color: var(--letra);
+        font-size: 12px;
+    }
 }
