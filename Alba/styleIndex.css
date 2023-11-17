@@ -113,10 +113,140 @@ input.oculto_menu[type=checkbox] {
     height: 16px;
     width: 16px;
 }
+
+/*SECTION*/
+/* -- SECTION -- */
+#booking{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    height: 400px;
+}
+.section-button{
+    background-color: var(--principal);
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+    margin-bottom: 24px;
+}
+#booking img{
+    position: relative;
+}
+/* -- SECTION - MAKE AN ORDER -- */
+.about{
+    height: 300px;
+    background-image: url(img/makeAnOrder.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-top: 6px solid var(--tercer);
+    border-bottom: 6px solid var(--tercer);
+}
+#about-capa{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 300px;
+    width: auto;
+}
+#about-capa-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+#about-capa-info h3{
+    text-transform: uppercase;
+    font-family: var(--franchise);
+    font-size: 52px;
+    margin-bottom: 12px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+#about-capa-info p{
+    font-size: 24px;
+    margin-top: 6px;
+}
+#about-capa-info button{
+    padding: 12px;
+    background-color: var(--principal);
+    border-radius: 8px;
+}
+#about-capa-info a{
+    color: var(--letra);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* -- SECTION - SLIDER -- */
+#menu-slider{
+    height: 450px;
+    overflow: hidden;
+    background-color: var(--principal);
+    display: flex;
+    flex-direction: column;
+}
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
+}
+.slider li {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider img {
+    width: 300px;
+    height: 262px;
+}
+.slider h2{
+    font-family: var(--franchise);
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+#button-menu{
+    background-color: var(--tercer);
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+    margin: auto;
+}
+#button-menu a{
+    color: var(--letra);
+    text-decoration: none;
+}
 /*FOOTER*/
 footer{
-    position: absolute;
-    bottom: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -160,6 +290,11 @@ footer img{
     color: var(--letra);
     font-size: 12px;
 }
+
+
+
+
+
 @media only screen and (min-width: 1024px){
     body{
         margin: 0px;
