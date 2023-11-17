@@ -45,18 +45,30 @@ header ul li{
     float: right;
 }
 /* -- SECTION -- */
+#major{
+    overflow: hidden;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 60% 39%;
+}
 #booking{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    overflow: hidden;
-    height: 400px;
+    justify-content: center;
+    margin-left: 32px;
+}
+#booking h2{
+    font-family: var(--franchise);
+    font-size: 42px;
+    margin: 0px;
+    margin-bottom: 12px;
 }
 .section-button{
     background-color: var(--principal);
     border-radius: 8px;
     padding: 12px;
-    font-size: 22px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
@@ -105,6 +117,7 @@ header ul li{
     padding: 12px;
     background-color: var(--principal);
     border-radius: 8px;
+    font-size: 22px;
 }
 #about-capa-info a{
     color: var(--letra);
@@ -232,6 +245,18 @@ footer{
     }
     #here{
         text-decoration: underline;
+    }
+    /* -- BUTTON -- */
+    .section-button{
+        background-color: var(--principal);
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        border: none;
+        margin-bottom: 24px;
     }
     /* -- SECTION - SLIDER -- */
     #menu-slider{
