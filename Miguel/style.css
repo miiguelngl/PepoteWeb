@@ -227,6 +227,9 @@ footer{
     color: var(--letra);
     font-size: 12px;
 }
+#footer-content-socialMedia, #footer-content-socialMedia img{
+    margin: 8px;
+}
 /* -- RESPONSIVE -- */
 @media only screen and (max-width: 600px){
 
@@ -259,6 +262,10 @@ footer{
         margin-bottom: 24px;
     }
     /* -- SECTION - SLIDER -- */
+    #booking h2{
+        font-size: 52px;
+        letter-spacing: 4px;
+    }
     #menu-slider{
         height: 600px;
         overflow: hidden;
@@ -291,5 +298,9 @@ footer{
     }
     #slogan h3{
         font-size: 40px;
+    }
+    #footer-content-socialMedia{
+        display: flex;
+        flex-direction: column;
     }
 }
