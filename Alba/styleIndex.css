@@ -28,7 +28,7 @@ body{
 }
 #header-movil div#logo{
     display: inline;
-    margin-left: 176.16px;
+    margin-left: 30%;
 }
 #header-movil div img{
     height: 50px;
@@ -122,9 +122,9 @@ input.oculto_menu[type=checkbox] {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    overflow: hidden;
     height: 400px;
     padding: 20px;
+    overflow: hidden;
 }
 .section-button{
     font-family: var(--montserrat);
@@ -137,13 +137,15 @@ input.oculto_menu[type=checkbox] {
     letter-spacing: 2px;
     border: none;
     margin-bottom: 24px;
+    width: 50%;
 }
 #booking img{
     position: absolute;
+    overflow: hidden;
     width: 250px;
     right: 0;
     top: 150px;
-    margin-right: -50px;
+    margin-right: -100px;
 }
 /* -- SECTION - MAKE AN ORDER -- */
 .about{
@@ -303,7 +305,7 @@ footer img{
 
 
 
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 1024px){
     body{
         margin: 0px;
         font-family: var(--montserrat);
@@ -323,8 +325,8 @@ footer img{
         align-items: center;
         height: 90px;
     }
-    div#header-desktop img{
-        margin-right: 12px;
+    div.header-desktop img#logo{
+        margin-left: 50px;
     }
     #header-menu-desktop{
         margin: auto;
@@ -333,12 +335,47 @@ footer img{
     }
     #header-menu-desktop a{
         margin: 20px;
+        text-decoration: none;
+        color: var(--letra);
+    }
+    #header-menu-desktop a:hover{
+        margin: 20px;
+        text-decoration: underline;
     }
     #header-icons{
         float: right;
         margin-right: 15px;
     }
-    
+    /*SECTION*/
+#booking{
+    font-family: var(--franchise);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    height: 400px;
+    padding: 20px;
+}
+.section-button{
+    font-family: var(--montserrat);
+    background-color: var(--principal);
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+    margin-bottom: 24px;
+    width: auto;
+}
+#booking img{
+    position: absolute;
+    width: 500px;
+    right: 0;
+    top: 50px;
+    margin-right: -150px;
+}
     /* -- FOOTER --*/
     footer{
         display: flex;
@@ -375,11 +412,5 @@ footer img{
     }
     #contact{
         display: inline;
-    }
-    #copyright{
-        text-align: center;
-        background-color: var(--tercer);
-        color: var(--letra);
-        font-size: 12px;
     }
 }
