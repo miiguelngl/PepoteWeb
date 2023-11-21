@@ -13,6 +13,7 @@
 }
 body{
     margin: 0;
+    padding: 0;
 }
 /*HEADER*/
 .header-desktop{
@@ -27,13 +28,14 @@ body{
 }
 #header-movil div#logo{
     display: inline;
-    margin-left: 28%;
+    margin-left: 30%;
 }
 #header-movil div img{
     height: 50px;
     
 }
 #menu-header-movil{
+    position: absolute;
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -115,15 +117,17 @@ input.oculto_menu[type=checkbox] {
 }
 
 /*SECTION*/
-/* -- SECTION -- */
 #booking{
+    font-family: var(--franchise);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    overflow: hidden;
     height: 400px;
+    padding: 20px;
+    overflow: hidden;
 }
 .section-button{
+    font-family: var(--montserrat);
     background-color: var(--principal);
     border-radius: 8px;
     padding: 12px;
@@ -133,9 +137,14 @@ input.oculto_menu[type=checkbox] {
     letter-spacing: 2px;
     border: none;
     margin-bottom: 24px;
+    width: 50%;
 }
 #booking img{
-    position: relative;
+    position: absolute;
+    overflow: hidden;
+    width: 200px;
+    right: 0;
+    top: 150px;
 }
 /* -- SECTION - MAKE AN ORDER -- */
 .about{
@@ -252,7 +261,7 @@ footer{
     flex-direction: column;
 }
 footer img{
-    width: 75px;
+    width: 55.68px;
     height: 50px;
 }
 #slogan{
@@ -308,29 +317,63 @@ footer img{
         font-family: var(--montserrat);
     }
     /* -- HEADER -- */
-    .header-desktop {
+    div.header-desktop {
         background-color: var(--principal);
         color: var(--letra);
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
         align-items: center;
-        height: 10%;
+        height: 90px;
     }
-    div#header-menu-desktop{
-        display: inline;
-        margin-right: 12px;
+    div.header-desktop img#logo{
+        margin-left: 50px;
     }
-    #header-menu{
+    #header-menu-desktop{
+        margin: auto;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
+    }
+    #header-menu-desktop a{
+        margin: 20px;
+        text-decoration: none;
+        color: var(--letra);
+    }
+    #header-menu-desktop a:hover{
+        margin: 20px;
+        text-decoration: underline;
     }
     #header-icons{
         float: right;
+        margin-right: 15px;
     }
-    
+    /*SECTION*/
+#booking{
+    font-family: var(--franchise);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    height: 400px;
+    padding: 20px;
+}
+.section-button{
+    font-family: var(--montserrat);
+    background-color: var(--principal);
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+    margin-bottom: 24px;
+    width: auto;
+}
+#booking img{
+    position: absolute;
+    width: 500px;
+    right: 0;
+    top: 50px;
+}
     /* -- FOOTER --*/
     footer{
         display: flex;
@@ -353,19 +396,19 @@ footer img{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: flex-start;
+        align-items: center;
         background-color: var(--principal);
+    }
+    #footer-content img{
+        width: 99.9px;
+        height: 90px;
     }
     #footer-content h3{
         font-family: var(--franchise);
         font-size: 24px;
         font-weight: 200;
     }
-    
-    #copyright{
-        text-align: center;
-        background-color: var(--tercer);
-        color: var(--letra);
-        font-size: 12px;
+    #contact{
+        display: inline;
     }
 }

@@ -8,17 +8,15 @@
 </head>
 <body>
     <header>
-        <div class="header">
-            <div id="header-menu">
-                <img src="img/Pepote Logo.png" alt="" height="75px" width="90px">
-                <div>
-                    <p>Home</p>
-                    <p>Menu</p>
-                    <p>Delivery</p>
-                    <p>Pepote Friends</p>
-                    <p>Story</p>
-                    <p>Contact</p>
-                </div>
+        <div class="header-desktop">
+            <img src="img/Pepote Logo.png" alt="pepotelogo" height="75px" width="90px">
+            <div id="header-menu-desktop">
+                    <a href="index.html">Home</a>
+                    <a>Menu</a>
+                    <a>Delivery</a>
+                    <a>Pepote Friends</a>
+                    <a>Story</a>
+                    <a>Contact</a>
             </div>
             <div id="header-icons">
                 <div>
@@ -26,42 +24,98 @@
                     <img src="img/cart.png" alt="">
                 </div>
             </div>
+        
+        </div>
+        <div id="header-movil">
+                <label for="button_desplegar"><img src="./img/menu.png" alt=""></label>
+                <input type="checkbox" id="button_desplegar" class="oculto_menu" />
+            <div id="logo"><img src="./img/Pepote Logo.png" alt="pepotelogo"></div>
+            <div id="menu-header-movil">
+                <div class="elemento-menu">
+                    <label for="reservation">RESERVATION</label>
+                    <input type="checkbox" id="reservation" class="oculto_reserva" />
+                    <div class="reservation_elementos">
+                        <a href="#">COLON</a>
+                        <a href="#">GRAN VIA</a>
+                        <a href="#">ARAGON </a>
+                    </div>
+                </div>
+                <div class="elemento-menu">
+                    <a href="#">MENU</a>
+                </div>
+                <div class="elemento-menu">
+                    <a href="#">DELIVERY</a>
+                </div>
+                <div class="elemento-menu">
+                    <a href="#">PEPOTE FRIENDS</a>
+                </div>
+                <div class="elemento-menu">
+                    <a href="#">OUR STORY</a>
+                </div>
+                <div class="elemento-menu">
+                    <a href="#">SPOTS</a>
+                </div>
+                <div class="elemento-menu">
+                    <a href="#">WORK WITH US</a>
+                </div>
+                <div class="elemento-menu">
+                    <label for="contact">CONTACT</label>
+                    <input type="checkbox" id="contact" class="oculto_contacto" />
+                    <div class="contact_info">
+                        <div id="tel">
+                            <p>+34 123 465 789</p>
+                            <img src="img/telefono.png" alt="telefono">
+                        </div>
+                        <div id="correo">
+                            <p>pepoteburgers@pepote.es</p>
+                            <img src="img/sobre.png" alt="sobre">
+                        </div>
+                        <div id="social">
+                            <p>@pepote</p>
+                            <img src="img/tik-tok.png" alt="tik-tok">
+                            <img src="img/instagram.png" alt="instagram">
+                            <img src="img/facebook.png" alt="facebook">
+                            <img src="img/twitter.png" alt="twitter">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <section>
         <div class="section-menu">
             <div class="section-menu-case">
-                <img src="img/burgers/cheeseburger.png" alt="">
+                <img src="img/burgers/cheeseburger.png" alt="cheeseburger">
                 <h3>cheeseburger</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <a href="">ingredients+</a>
             </div>
             <div class="section-menu-case">
-                <img src="img/burgers/doblecheeseburger.png" alt="">
+                <img src="img/burgers/doblecheeseburger.png" alt="doblecheeseburger">
                 <h3>doble cheeseburger</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <a href="">ingredients+</a>
             </div>
             <div class="section-menu-case">
-                <img src="img/burgers/bigpepote.png" alt="">
+                <img src="img/burgers/bigpepote.png" alt="bigpepote">
                 <h3>big pepote</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <a href="">ingredients+</a>
             </div>
             <div class="section-menu-case">
-                <img src="img/burgers/pepotegg.png" alt="">
+                <img src="img/burgers/pepotegg.png" alt="pepotegg">
                 <h3>pepotegg</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <a href="">ingredients+</a>
             </div>
             <div class="section-menu-case">
-                <img src="img/burgers/cheesemountain.png" alt="">
+                <img src="img/burgers/cheesemountain.png" alt="cheesemountain">
                 <h3>cheese mountain</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <a href="">ingredients+</a>
             </div>
             <div class="section-menu-case">
-                <img src="img/burgers/intensebacon.png" alt="">
+                <img src="img/burgers/intensebacon.png" alt="intense bacon">
                 <h3>intense bacon</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <a href="">ingredients+</a>
@@ -74,7 +128,7 @@
         </div>
         <div id="footer-content">
             <div>
-                <img src="img/logo.png" alt="" height="200px" width="225px">
+                <img src="img/Pepote Logo.png" alt="pepotelogo">
             </div>
             <div>
                 <h3>SCHEDdivE:</h3>
@@ -87,7 +141,7 @@
                     C/ d'Antoni Suárez, 48<br>
                     C/ de Colón, 43</p>
             </div>
-            <div>
+            <div id="contact">
                 <h3>Contact:</h3>
                 <p>Tel: +34 651 25 14 85<br>
                     Mail: info@pepote.com</p>
