@@ -142,7 +142,7 @@ input.oculto_menu[type=checkbox] {
 #booking img{
     position: absolute;
     overflow: hidden;
-    width: 250px;
+    width: 200px;
     right: 0;
     top: 150px;
 }
