@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @font-face {
     font-family: 'Franchise';
-    src: url(typography/Franchise.ttf);
+    src: url(../typography/Franchise.ttf);
 }
 :root{
     --montserrat: 'Montserrat', sans-serif;
@@ -41,61 +41,30 @@ header ul li{
     justify-content: flex-start;
     align-items: center;
 }
+#header-menu img{
+    height: 75px; 
+    width: 90px;
+}
 #header-icons{
     float: right;
 }
-/* -- SECTION -- */
-.section-menu{
-    display: grid;
-    height: auto;
-    grid-template-columns: 300px;
-    grid-template-rows: auto;
-    justify-content: space-around;
-    gap: 12px;
-    margin: 12px 0px;
+#header-icons img{
+    height: 20px;
+    width: 20px;
 }
-.section-menu-case{
+/* -- SECTION -- */
+section{
+    height: auto;
+}
+#pepotePoints{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--principal);
-    border-radius: 2px;
-    padding: 16px;
-    margin-bottom: 12px;
+    gap: 12px;
 }
-.section-menu-case img{
-    width: 300px;
-    height: 262px;
-}
-.section-menu-case h3{
+#pepotePoints h2, #pepotePoints h3{
     font-family: var(--franchise);
-    font-size: 24px;
-    font-weight: 200;
-    margin-bottom: 0px;
-}
-.section-menu-case p{
-    text-align: center;
-}
-.section-menu-case a{
-    text-decoration: none;
-    color: var(--secundario);
-    text-transform: uppercase;
-}
-#section-button-position{
-    display: flex;
-    justify-content: center;
-    margin: 32px 0px;
-}
-#section-button{
-    background-color: var(--principal);
-    border-radius: 8px;
-    padding: 12px;
-    font-size: 22px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    border: none;
-    margin: auto;
+    font-size: 32px;
 }
 /* -- FOOTER -- */
 footer{
@@ -125,6 +94,10 @@ footer{
     background-color: var(--principal);
     text-align: center;
 }
+#footer-content-logo img{
+    height: 165px;
+    width: 185px;
+}
 #footer-content h3{
     font-family: var(--franchise);
     font-size: 24px;
@@ -136,6 +109,9 @@ footer{
     background-color: var(--tercer);
     color: var(--letra);
     font-size: 12px;
+}
+#footer-content-socialMedia, #footer-content-socialMedia img{
+    margin: 8px;
 }
 /* -- RESPONSIVE -- */
 @media only screen and (max-width: 600px){
@@ -152,21 +128,17 @@ footer{
     }
     header a:hover, #here:hover{
         text-decoration: underline var(--tercer);
-    } 
+    }
     #here{
         text-decoration: underline;
     }
     /* -- SECTION -- */
-    .section-menu{
-        display: grid;
-        height: auto;
-        grid-template-columns: repeat(3, 375px);
-        justify-content: space-around;
-        gap: 12px;
-        margin: 25px;
+    section{
+        height: 600px;
     }
-    .section-menu-case h3{
-        font-size: 32px;
+    #pepotePoints{
+        justify-content: space-evenly;
+        height: 600px;
     }
     /* -- FOOTER -- */
     #footer-content{
@@ -185,5 +157,9 @@ footer{
     }
     #slogan h3{
         font-size: 40px;
+    }
+    #footer-content-socialMedia{
+        display: flex;
+        flex-direction: column;
     }
 }
