@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @font-face {
     font-family: 'Franchise';
-    src: url(typography/Franchise.ttf);
+    src: url(../typography/Franchise.ttf);
 }
 :root{
     --montserrat: 'Montserrat', sans-serif;
@@ -41,8 +41,16 @@ header ul li{
     justify-content: flex-start;
     align-items: center;
 }
+#header-menu img{
+    height: 75px; 
+    width: 90px;
+}
 #header-icons{
     float: right;
+}
+#header-icons img{
+    height: 20px;
+    width: 20px;
 }
 /* -- SECTION -- */
 section{
@@ -85,6 +93,10 @@ footer{
     align-items: center;
     background-color: var(--principal);
     text-align: center;
+}
+#footer-content-logo img{
+    height: 165px;
+    width: 185px;
 }
 #footer-content h3{
     font-family: var(--franchise);

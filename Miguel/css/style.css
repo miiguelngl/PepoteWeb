@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @font-face {
     font-family: 'Franchise';
-    src: url(typography/Franchise.ttf);
+    src: url(../typography/Franchise.ttf);
 }
 :root{
     --montserrat: 'Montserrat', sans-serif;
@@ -41,8 +41,16 @@ header ul li{
     justify-content: flex-start;
     align-items: center;
 }
+#header-menu img{
+    height: 75px; 
+    width: 90px;
+}
 #header-icons{
     float: right;
+}
+#header-icons img{
+    height: 20px;
+    width: 20px;
 }
 /* -- SECTION -- */
 #major{
@@ -81,7 +89,7 @@ header ul li{
 /* -- SECTION - MAKE AN ORDER -- */
 .about{
     height: 300px;
-    background-image: url(img/makeAnOrder.jpg);
+    background-image: url(../img/makeAnOrder.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -214,6 +222,10 @@ footer{
     align-items: center;
     background-color: var(--principal);
     text-align: center;
+}
+#footer-content-logo img{
+    height: 165px;
+    width: 185px;
 }
 #footer-content h3{
     font-family: var(--franchise);
