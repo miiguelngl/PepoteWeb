@@ -12,43 +12,108 @@
     --tercer: #40200e; 
 }
 body{
-    margin: 0px;
-    font-family: var(--montserrat);
+    margin: 0;
+    padding: 0;
 }
-header{
-    background-color: var(--principal);
-    color: var(--letra);
+/*HEADER*/
+.header-desktop{
+    display: none;
 }
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.header div p{
-    display: inline;
-    margin-right: 12px;
-    font-size: small;
-}
-#header-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-#header-menu img{
-    width: 50px;
-    height: 44.9px;
+#header-movil label{
     margin: 10px;
+}
+#header-movil{
+    height: 10%;
+    background-color: var(--principal);
+}
+#header-movil div#logo{
+    display: inline;
+    margin-left: 30%;
+}
+#header-movil div img{
+    height: 50px;
+    
+}
+#menu-header-movil{
+    position: absolute;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franchise';
+
+}
+div.elemento-menu{
+    padding: 10px;
+}
+div.elemento-menu a{
+    text-decoration: none;
+    color: var(--secundario);
+}
+.reservation_elementos {
+    display: none;
 }
 
-#header-icons{
-    float: right;
+:checked~.reservation_elementos {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #aa771d;
+    align-items: center;
+    left: 0;
 }
-#header-icons img{
-    width: 15.72px;
-    height: 15.72px;
-    margin: 10px;
+.reservation_elementos a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+input.oculto_reserva[type=checkbox] {
+    position: absolute;
+    left: -999em;
+}
+
+.contact_info {
+    display: none;
+}
+
+:checked~.contact_info {
+    display: block;
+}
+
+input.oculto_contacto[type=checkbox] {
+    position: absolute;
+    left: -999em;
+}
+
+:checked~#menu-header-movil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #aa771d;
+    align-items: center;
+}
+#menu-header-movil {
+    display: none;
+}
+input.oculto_menu[type=checkbox] {
+    position: absolute;
+    left: -999em;
+}
+.contact_info div p{
+    font-family: var(--montserrat);
+    font-size: small;
+}
+.contact_info div#tel p, .contact_info div#correo p{
+    display: inline;
+}
+.contact_info div#tel img, .contact_info div#correo img{
+    width: 16px;
+    height: 16px;
+}
+.contact_info div#social img{
+    height: 16px;
+    width: 16px;
 }
 /* -- SECTION -- */
 .section-menu{
@@ -81,18 +146,24 @@ header{
 }
 .section-menu-case p{
     text-align: center;
+    font-family: var(--montserrat);
 }
 .section-menu-case a{
     text-decoration: none;
     color: var(--secundario);
     text-transform: uppercase;
+    font-family: var(--montserrat);
 }
-/* -- FOOTER -- */
+/*FOOTER*/
 footer{
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
-
+footer img{
+    width: 55.68px;
+    height: 50px;
+}
 #slogan{
     background-color: var(--secundario);
     color: var(--letra);
@@ -101,23 +172,27 @@ footer{
 }
 #slogan h3{
     text-align: center;
-    font-size: 32px;
     margin: 4px;
     font-weight: 200;
 }
 #footer-content{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--principal);
 }
 #footer-content h3{
     font-family: var(--franchise);
-    font-size: 24px;
     font-weight: 200;
+    text-align: center;
 }
-
+#footer-content p{
+    font-size: small;
+}
+#contact{
+    display: none;
+}
 #copyright{
     text-align: center;
     background-color: var(--tercer);
@@ -133,6 +208,46 @@ footer{
 }
 
 @media only screen and (min-width: 901px){
+    body{
+        margin: 0px;
+        font-family: var(--montserrat);
+    }
+    #header-movil{
+        display: none;
+    }
+    body{
+        margin: 0px;
+        font-family: var(--montserrat);
+    }
+    /* -- HEADER -- */
+    div.header-desktop {
+        background-color: var(--principal);
+        color: var(--letra);
+        display: flex;
+        align-items: center;
+        height: 90px;
+    }
+    div.header-desktop img#logo{
+        margin-left: 50px;
+    }
+    #header-menu-desktop{
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    #header-menu-desktop a{
+        margin: 20px;
+        text-decoration: none;
+        color: var(--letra);
+    }
+    #header-menu-desktop a:hover{
+        margin: 20px;
+        text-decoration: underline;
+    }
+    #header-icons{
+        float: right;
+        margin-right: 15px;
+    }
     /* -- SECTION -- */
     .section-menu{
         display: grid;
@@ -145,15 +260,41 @@ footer{
     .section-menu-case h3{
         font-size: 32px;
     }
-    /* -- FOOTER -- */
+    /* -- FOOTER --*/
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #slogan{
+        background-color: var(--secundario);
+        color: var(--letra);
+        font-family: var(--franchise);
+        
+    }
+    #slogan h3{
+        text-align: center;
+        font-size: 32px;
+        margin: 4px;
+        font-weight: 200;
+    }
     #footer-content{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: flex-start;
+        align-items: center;
         background-color: var(--principal);
     }
-    #slogan h3{
-        font-size: 40px;
+    #footer-content img{
+        width: 99.9px;
+        height: 90px;
+    }
+    #footer-content h3{
+        font-family: var(--franchise);
+        font-size: 24px;
+        font-weight: 200;
+    }
+    #contact{
+        display: inline;
     }
 }

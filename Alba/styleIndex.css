@@ -145,7 +145,6 @@ input.oculto_menu[type=checkbox] {
     width: 250px;
     right: 0;
     top: 150px;
-    margin-right: -100px;
 }
 /* -- SECTION - MAKE AN ORDER -- */
 .about{
@@ -374,7 +373,6 @@ footer img{
     width: 500px;
     right: 0;
     top: 50px;
-    margin-right: -150px;
 }
     /* -- FOOTER --*/
     footer{
