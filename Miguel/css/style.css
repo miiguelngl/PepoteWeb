@@ -35,25 +35,69 @@ header ul li{
     display: inline;
     margin-right: 12px;
 }
-#header-menu{
+#header-global {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+} 
+#header-global #header-menu-img{
+    display: none;
 }
-#header-menu img{
+#header-menu-desktop{
+    display: none;
+}
+ #botonMenu {
+    background-color: transparent;
+    border: 0px;
+} 
+#botonMenu:focus {
+    outline: none;
+}
+#botonMenu:focus + #header-menu-nav {
+    transform: translateX(0rem);
+}
+#header-menu-img{
     height: 75px; 
     width: 90px;
+} 
+#header-menu-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 15rem;
+    background-color: var(--principal);
+    transform: translateX(-15rem);
+    transition: 1s all;
 }
+#header-menu-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#header-menu-nav a {
+    display: block;
+    color: black;
+    padding: 1rem;
+    transition: .5s all;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--franchise);
+}
+
 #header-icons{
     float: right;
+}
+#header-icons ul{
+    padding: 0px;
 }
 #header-icons img{
     height: 20px;
     width: 20px;
 }
 /* -- SECTION -- */
-#major{
+#main-section{
     overflow: hidden;
     height: 400px;
     display: grid;
@@ -260,6 +304,18 @@ footer{
     }
     #here{
         text-decoration: underline;
+    }
+    #header-menu-movil{
+        display: none;
+    }
+    #header-menu-desktop{
+        display: block;
+    }
+    #header-logo{
+        display: none;
+    }
+    #header-global #header-menu-img{
+        display: block;
     }
     /* -- BUTTON -- */
     .section-button{
